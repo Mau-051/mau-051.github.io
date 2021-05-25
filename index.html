@@ -4,23 +4,74 @@
     <meta charset="utf-8" />
     <title>mountain biking blog</title>
     <style>
+      #text-block1 {
+        position: absolute;
+        right: 8px;
+        left: 8px;
+        background-color: rgba(0, 0, 0, 0.322);
+        top: 140px;
+        border-radius: 10px;
+      }
+
+      #text-block2 {
+        position: absolute;
+        right: 8px;
+        left: 8px;
+        background-color: rgba(0, 0, 0, 0.322);
+        top: 700px;
+        border-radius: 10px;
+      }
+      #text-block3 {
+        position: absolute;
+        right: 8px;
+        left: 8px;
+        background-color: rgba(0, 0, 0, 0.322);
+        top: 1260px;
+        border-radius: 10px;
+      }
+      #footer-box {
+        position: absolute;
+        right: 8px;
+        left: 8px;
+        background-color: rgba(0, 0, 0, 0.322);
+        top: 1840px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      #hider-box {
+        height: 17px;
+        width: 100%;
+        background-color: #4b5043;
+        position: fixed;
+        top: 0px;
+      }
+      img {
+        padding-right: 16px;
+        border-radius: 10px;
+      }
       h1 {
         color: #ccb187;
       }
       h2 {
-        color: #b69d79;
-      }
-      #title {
-        color: #b69d79;
+        color: #ccb187;
+        padding-left: 16px;
       }
       p {
-        color: #b69d79;
+        font-size: 17px;
+        color: #d6be97;
+        padding-left: 16px;
+      }
+
+      .image-footers {
+        font-size: 10px;
+        color: #d6be97;
       }
       body {
         background-color: #4b5043;
+        font-family: sans-serif;
       }
       #footer {
-        color: white;
+        color: #d6be97;
       }
       #head {
         font-family: "copperplate", fantasy;
@@ -31,10 +82,15 @@
       .topnav {
         overflow: hidden;
         background-color: rgb(46, 44, 44);
+        border-radius: 10px;
+        position: fixed;
+        left: 8px;
+        right: 8px;
+        top: 8px;
       }
       .topnav a {
         float: left;
-        color: #f2f2f2;
+        color: #d6be97;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -42,66 +98,176 @@
       }
       .topnav a:hover {
         background-color: #43473d;
-        color: #b69d79;
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+      }
+      .links:hover {
+        color: #4b5043;
+        background-color: #b69d79;
+      }
+
+      .links:active {
+        color: seagreen;
+      }
+      ::selection {
+        color: #4b5043;
+        background-color: #b69d79;
       }
     </style>
   </head>
   <body>
-    <div class="topnav">
-      <a class="#home" href="/">types of mountain bikes</a>
-      <a
-        class="#contact"
-        href="file:///C:/Users/mauri/projects/montanas/contact.html"
-        >contact</a
-      >
-    </div>
-    <div style="padding-left: 16px"></div>
-
     <main>
+      <br />
+      <br />
       <h1>types of mountain bikes</h1>
-
-      <h2>Hardtail bike</h2>
-      <img
-        src="https://images.unsplash.com/photo-1575585269294-7d28dd912db8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-        width="50%"
-        alt="hartal bike on a a rock"
-      />
-      <p>
-        image taken by Patrick Hendry and uploaded over there
-        -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://unsplash.com/photos/OZh_OBP_fao" class="links">
-          --here--
-        </a>
-      </p>
-      <h2>Full suspension bike</h2>
-      <img
-        src="https://images.unsplash.com/photo-1545565319-e1b6be69a9a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW91bnRhaW4lMjBiaWtlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        width="50%"
-        alt="full suspension bike in a dark room"
-      />
-      <p>
-        image taken by Pascal Obermeier and uploaded over there
-        -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://unsplash.com/photos/YOphb-Xr2sk" class="links">
-          --here--</a
+      <br />
+      <div id="text-block1">
+        <br />
+        <br />
+        <img
+          src="https://images.unsplash.com/photo-1575585269294-7d28dd912db8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          width="35%"
+          alt="hartal bike on a a rock"
+          align="right"
+        />
+        <h2>Hardtail bike</h2>
+        <p>
+          the Hardtail bike is called like that because of the layout of its
+          suspension,<br />
+          where there are only pistons on the front of the bike specifically
+          right below<br />
+          the handlebar and around the front wheel resembling a fork as some
+          people<br />
+          say, but this "fork" is the only suspension in the whole structure
+          because the<br />
+          back of the bike is fullly right which among other things makes the
+          bike<br />
+          cheaper and easier to repair and give maintenance
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="image-footers" align="right">
+          image taken by Patrick Hendry and uploaded over there
+          -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://unsplash.com/photos/OZh_OBP_fao" class="links">
+            --here-
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <br />
+        <br />
+      </div>
+      <div id="text-block2">
+        <br />
+        <br />
+        <img
+          src="https://images.unsplash.com/photo-1545565319-e1b6be69a9a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW91bnRhaW4lMjBiaWtlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          width="35%"
+          alt="full suspension bike in a dark room"
+          align="right"
+        />
+        <h2>Full suspension bike</h2>
+        <p>
+          A full-suspension mountain bike features both a suspension fork up
+          front and<br />
+          a rear shock, whereas a hardtail bike as we saw before has only a
+          suspension fork.<br />
+          The type of suspension a mountain bike has will affect the bike's
+          control,<br />
+          traction and comfort—not to mention how enjoyable it is to ride but
+          ths comes with<br />
+          an increase on the price of the bike, maintenance and replacement
+          parts
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="image-footers" align="right">
+          image taken by Pascal Obermeier and uploaded over there
+          -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://unsplash.com/photos/YOphb-Xr2sk" class="links">
+            --here--</a
+          >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <br />
+        <br />
+      </div>
+      <div id="text-block3">
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <img
+          src="https://images.unsplash.com/photo-1619073905587-94c7b3d503d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vdW50YWluJTIwYmlrZSUyMGVsZWN0cmljfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          width="45%"
+          alt="electric bike with a battery on a rock"
+          align="right"
+        />
+        <h2>Electric bike</h2>
+        <p>
+          An electric bicycle, also known as an e-bike or ebike, is a bicycle
+          with<br />
+          an integrated electric motor used to assist propulsion. Many kinds of
+          e-bikes are<br />
+          available worldwide, but they generally fall into two broad
+          categories:<br />
+          bikes that assist the rider's pedal-power (pedelecs) and bikes that
+          add a throttle,<br />
+          integrating moped-style functionality. Both retain the ability to be
+          pedaled by<br />
+          the rider and are therefore not electric motorcycles, these bikes can
+          sometimes<br />
+          have suspension but are not necessary also they are probably the
+          most<br />
+          expensive of the three not just because of their motors but also
+          because<br />
+          they can also be hardtail or even full suspension skyrocketing their
+          prices
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="image-footers" align="right">
+          image taken by Himiway Bikes and uploaded over there
+          -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://unsplash.com/photos/2i9ltgQc3kQ" class="links">
+            --here--</a
+          >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+      <div id="hider-box"></div>
+      <div class="topnav">
+        <a class="#home" href="/">&nbsp;types of mountain bikes</a>
+        <a
+          class="#contact"
+          href="file:///C:/Users/mauri/projects/montanas/contact.html"
+          >contact</a
         >
-      </p>
-      <h2>Electric bike</h2>
-      <img
-        src="https://images.unsplash.com/photo-1619073905587-94c7b3d503d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vdW50YWluJTIwYmlrZSUyMGVsZWN0cmljfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        width="50%"
-        alt="electric bike with a battery on a rock"
-      />
-      <p>
-        image taken by Himiway Bikes and uploaded over there
-        -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://unsplash.com/photos/2i9ltgQc3kQ" class="links">
-          --here--</a
-        >
-      </p>
+      </div>
+      <div style="padding-left: 16px"></div>
     </main>
-    <footer>
-      <span id="footer"> &#169; 2021 </span>
-    </footer>
+    <div id="footer-box">
+      <footer>
+        <span id="footer" align="center"> &#169; 2021 </span>
+      </footer>
+    </div>
   </body>
 </html>
