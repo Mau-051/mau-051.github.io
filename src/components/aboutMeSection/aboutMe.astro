@@ -1,0 +1,43 @@
+---
+import "../../styles/aboutMeVew.css";
+import Footer from "./footer.astro";
+---
+
+<div id="background-box">
+  <div id="about-me-text">
+    <h2 id="about-me-heading">WHY I LOVE PROGRAMMING</h2>
+    <p id="about-me-paragraph">
+      I've always loved games and tinkering with technology. As a kid, I
+      attempted to create my own version of Pac-Man using Game Maker, with less
+      than stellar results. Fast forward to my time studying mechatronics, where
+      I gained a solid foundation in computer science. However, it wasn't until
+      the pandemic hit that I truly discovered my passion for web development.
+      My uncle, a seasoned developer, offered to mentor me, and I've been hooked
+      ever since. Now, I'm excited to combine my love for tech and creativity to
+      build awesome web experiences.
+    </p>
+  </div>
+  <div id="chevron-up-container">
+    <p id="chevron-up-text">
+      Please feel free to check out any of the sources above to see what I can
+      do for you.
+    </p>
+    <p id="registered-simbol">2023&#174;</p>
+    <button id="chevron-up-btn">
+      <img src="/icons/chevron.svg" />
+    </button>
+  </div>
+  <Footer />
+</div>
+<script>
+  const chevronUp = document.getElementById("chevron-up-btn");
+
+  function scrollTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  chevronUp.addEventListener("click", scrollTop);
+</script>

@@ -1,0 +1,256 @@
+#upper-background {
+  padding: 6.2vh 3vw;
+  background-size: cover;
+  background-position: right;
+  background-image: url("https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.frame {
+  /*looks*/
+  width: calc(94vw - 12px);
+  height: 87.6vh;
+  border-radius: 2rem;
+  background-color: rgba(28, 32, 29, 0.259);
+  backdrop-filter: blur(5px);
+  /*flexing*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 8vw;
+}
+
+#photo-of-me {
+  height: 470px;
+  width: 320px;
+  margin-right: 8vw;
+}
+
+.name-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#firstName {
+  color: var(--text-color);
+  margin: 0;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 95%;
+  letter-spacing: 0.3rem;
+}
+#secondName {
+  color: var(--text-color);
+  margin: 0;
+  font-size: 1.38rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+#job-description {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2vh;
+}
+
+.contact-box {
+  color: var(--text-color);
+}
+
+#contact {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.info-options {
+  margin: 0.5rem 0;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.info-options img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.4rem;
+}
+
+.info-options .external-link-icons {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.2rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#chevron-down {
+  position: absolute;
+  bottom: -3.8rem;
+  left: calc(100% / 2);
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#chevron-down button {
+  background-color: transparent;
+  border: none;
+}
+
+#chevron-down img {
+  width: 5rem;
+  transition: 200ms;
+}
+#chevron-down img:hover {
+  transform: scale(1.2);
+}
+
+#chevron-down p {
+  transform: translateY(0.7rem);
+  font-size: 1.3rem;
+  margin: 0;
+  color: var(--text-color);
+}
+
+/*800px screen*/
+
+@media screen and (max-width: 800px) {
+  #photo-of-me {
+    display: none;
+  }
+
+  #upper-background {
+    padding: 6.2vh 6vw;
+  }
+
+  .frame {
+    justify-content: center;
+    width: 88vw;
+  }
+
+  .information-box {
+    margin-left: 0vw;
+    margin-bottom: 1rem;
+  }
+
+  #firstName {
+    font-size: 3.4rem;
+  }
+  #secondName {
+    font-size: 1.2rem;
+  }
+
+  #job-description {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  #contact {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .info-options {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .info-options img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+  }
+  .info-options .external-link-icons {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.1rem;
+  }
+
+  #chevron-down {
+    bottom: -3.3rem;
+  }
+
+  #chevron-down img {
+    width: 4rem;
+  }
+
+  #chevron-down p {
+    transform: translateY(0.7rem);
+    font-size: 1rem;
+    margin: 0;
+    color: var(--text-color);
+  }
+}
+
+/*phone screen*/
+
+@media screen and (max-width: 426px) {
+  #firstName {
+    font-size: 2.9rem;
+  }
+  #secondName {
+    font-size: 1rem;
+  }
+
+  #chevron-down img {
+    width: 3rem;
+  }
+
+  #chevron-down {
+    bottom: -2.7rem;
+  }
+
+  #chevron-down p {
+    transform: translateY(0.4rem);
+    font-size: 0.8rem;
+  }
+}
+
+/*wide screen*/
+
+@media screen and (min-width: 2500px) {
+  #upper-background {
+    padding: 6.2vh 5vw;
+  }
+
+  .frame {
+    width: calc(90vw - 12px);
+  }
+
+  .information-box {
+    margin-left: 10vw;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #firstName {
+    font-size: 7rem;
+  }
+  #secondName {
+    font-size: 2.8rem;
+  }
+
+  #photo-of-me {
+    margin-right: 10vw;
+  }
+
+  #chevron-down {
+    bottom: -3rem;
+  }
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap");
+
+:root {
+  --text-color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+}
+
+::selection {
+  /*revisit when image is done*/
+  color: rgb(255, 255, 255);
+  background-color: rgba(230, 230, 230, 0.444);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(28, 35, 28) 10%,
+    rgb(66, 89, 69) 25%,
+    transparent 100%
+  );
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #b0b9b2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(99, 116, 101, 0.885);
+}
+/*800px screen*/
+
+@media screen and (max-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}

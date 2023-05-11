@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+
+#background-box {
+  width: 100%;
+  height: 96vh;
+  padding: 2vh 0;
+  background-image: linear-gradient(
+    to top,
+    rgb(63, 77, 68),
+    rgb(109, 137, 110)
+  );
+}
+
+#about-me-text {
+  color: var(--text-color);
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  max-width: 45vw;
+  margin: 1rem auto;
+}
+
+#about-me-heading {
+  font-size: 2.8vw;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 0;
+}
+
+#about-me-paragraph {
+  font-size: 1.5vw;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: -100vh;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-photo {
+  border-radius: 50%;
+  outline: rgb(135, 145, 137) solid 3px;
+  margin-left: 3rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+#chevron-up-container {
+  display: flex;
+  position: absolute;
+  left: calc(100% / 2);
+  bottom: -98.8vh;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 40vw;
+  z-index: 1;
+  color: var(--text-color);
+}
+
+#chevron-up-text {
+  margin: 0 0 0.5rem 0;
+}
+
+#chevron-up-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#chevron-up-btn img {
+  width: 5rem;
+  transition: 200ms;
+}
+#chevron-up-btn img:hover {
+  transform: scale(1.2);
+}
+
+#registered-simbol {
+  margin: 0.5rem 0 0 0;
+}
+
+#signature {
+  width: 13rem;
+  height: 7rem;
+  margin-right: 2rem;
+}
+
+/*tablet screen*/
+
+@media screen and (max-width: 800px) {
+  #about-me-text {
+    max-width: 60vw;
+    margin: 1rem auto;
+  }
+
+  #about-me-paragraph {
+    font-size: 2vw;
+    letter-spacing: 0.1rem;
+  }
+
+  #chevron-up-text {
+    font-size: 0.7rem;
+  }
+
+  #registered-simbol {
+    font-size: 0.7rem;
+  }
+
+  #chevron-up-btn img {
+    width: 4rem;
+  }
+
+  #footer {
+    height: 8rem;
+  }
+
+  #footer-photo {
+    margin-left: 4vw;
+    height: 12vw;
+    width: 12vw;
+  }
+
+  #signature {
+    margin-top: 1vw;
+    width: 20vw;
+    height: 12vw;
+  }
+}
+
+/*phone screen*/
+
+@media screen and (max-width: 426px) {
+  #about-me-text {
+    max-width: 80vw;
+    margin: 1rem auto;
+  }
+
+  #about-me-heading {
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    margin: 0.5rem 0;
+  }
+
+  #about-me-paragraph {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  #chevron-up-text {
+    font-size: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  #registered-simbol {
+    font-size: 0.3rem;
+  }
+
+  #chevron-up-btn img {
+    width: 3rem;
+  }
+
+  #footer {
+    height: 8rem;
+    align-items: center;
+  }
+
+  #footer-photo {
+    margin-left: 4vw;
+    height: 12vw;
+    width: 12vw;
+  }
+
+  #signature {
+    margin-top: 1vw;
+    margin-right: 5vw;
+    width: 20vw;
+    height: 12vw;
+  }
+}
+
+/*wide screen*/
+
+@media screen and (min-width: 2500px) {
+  #about-me-text {
+    max-width: 45vw;
+    margin: 2rem auto;
+  }
+
+  #about-me-heading {
+    font-size: 3vw;
+    margin: 2rem 0;
+  }
+
+  #about-me-paragraph {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-top: 0rem;
+  }
+}
