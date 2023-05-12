@@ -47,9 +47,10 @@
 #secondName {
   color: var(--text-color);
   margin: 0;
+  margin-left: 3px;
   font-size: 1.38rem;
   font-weight: 300;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.28rem;
 }
 
 #job-description {
@@ -77,6 +78,10 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+
+.info-options a {
+  display: block;
 }
 
 .info-options img {
@@ -121,8 +126,8 @@ a:active {
 }
 
 #chevron-down p {
-  transform: translateY(0.7rem);
-  font-size: 1.3rem;
+  transform: translateY(0.75rem);
+  font-size: 1.2rem;
   margin: 0;
   color: var(--text-color);
 }
