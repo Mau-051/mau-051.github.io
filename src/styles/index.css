@@ -10,9 +10,8 @@ body {
 }
 
 ::selection {
-  /*revisit when image is done*/
-  color: rgb(255, 255, 255);
-  background-color: rgba(230, 230, 230, 0.444);
+  color: rgb(50, 50, 50);
+  background-color: rgb(205, 205, 205);
 }
 
 ::-webkit-scrollbar-track {
